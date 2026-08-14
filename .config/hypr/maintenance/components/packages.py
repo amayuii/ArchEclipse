@@ -70,13 +70,17 @@ PACKAGES: list[str] = [
     "grim",
     "wf-recorder",
     "vlc",
+    # theme scripts call it directly for video wallpapers
+    "ffmpeg",
     "imagemagick",
     "mpvpaper",
     "zenity",
 
     # Themes and UI enhancements
     "sddm",
-    "where-is-my-sddm-theme-git",
+    # no theme pkg, login theme lives in theme/sddm
+    "qt6-declarative",
+    "qt6-svg",
     "cwal",
     "fastfetch",
     "starship",

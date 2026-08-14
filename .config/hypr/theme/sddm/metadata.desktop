@@ -1,0 +1,13 @@
+[SddmGreeterTheme]
+Name=archeclipse
+Description=Blurred, palette-matched login screen mirroring the archeclipse hyprlock
+Author=amayuii
+License=MIT
+Type=sddm-theme
+Version=1.0
+Website=https://github.com/amayuii/archeclipse
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=
+Email=
+Screenshot=

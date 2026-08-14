@@ -160,11 +160,11 @@ export default ({
                   setProgressStatus("loading");
                   const target = targetType.peek();
                   const command = {
+                    // no pkexec, sddm-theme.sh writes to /var/lib/archeclipse/sddm
                     sddm: [
-                      "pkexec",
                       "bash",
-                      "-c",
-                      `sed -i "s|^background=.*|background=${wallpaper}|" /usr/share/sddm/themes/where_is_my_sddm_theme/theme.conf`,
+                      `${GLib.get_home_dir()}/.config/hypr/theme/scripts/sddm-theme.sh`,
+                      wallpaper,
                     ],
                     lockscreen: [
                       "bash",
